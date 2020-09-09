@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding-right: 20px;
+  padding-left: 340px;
+  color: #ffffff;
+  background-color: #009688;
+
+  @media (max-width: 640px) {
+    justify-content: space-between;
+  }
+
+  &__profile-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  &__button-menu {
+
+    @media (min-width: 641px) {
+      display: none !important;
+    }
+
+  }
+
+  .MuiSvgIcon-root {
+    fill: #ffffff;
+  }
+
+  .MuiTypography-colorTextSecondary {
+    color: #ffffff;
+  }
+
+}

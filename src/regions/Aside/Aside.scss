@@ -1,0 +1,53 @@
+.aside {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  padding-bottom: 60px;
+  background-color: #ffffff;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
+
+  .aside__btn-add-contact {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.add-contact {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  max-width: 320px;
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.35);
+  transform: translate(-50%, -50%);
+
+  &.hidden {
+    display: none;
+  }
+
+  &__title {
+    padding: 0 20px;
+    line-height: 60px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #009688;
+  }
+
+  &__form {
+    padding: 20px 10px;
+    text-align: center;
+    background-color: #ffffff;
+  }
+
+  &__entry-field {
+    width: 100%;
+    height: 56px;
+    margin-bottom: 15px !important;
+  }
+}

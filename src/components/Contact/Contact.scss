@@ -1,0 +1,36 @@
+.contacts {
+  height: 100%;
+  overflow: auto;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    min-height: 61px;
+    padding: 8px 16px;
+    border-bottom: 1px solid #f7f7f7;
+    transition-property: background-color, cursor;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+
+    &:hover {
+      background-color: lighten(#02a354, 50%);
+      cursor: pointer;
+    }
+
+    &-edit-field {
+      position: absolute;
+      left: 72px;
+    }
+
+    .MuiTypography-body1 {
+      width: 127px;
+      line-height: 24px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+
+    .hidden {
+      display: none;
+    }
+  }
+}

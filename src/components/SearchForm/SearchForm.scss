@@ -1,0 +1,23 @@
+.search-block {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  background-color: #009688;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.search-form {
+  width: 100%;
+
+  &__input {
+    width: 100%;
+    padding: 10px 14px;
+    font: {
+      size: 1rem
+    }
+    color: rgba(0, 0, 0, 0.87);
+    letter-spacing: 0.00938em;
+    border-radius: 4px;
+  }
+}
